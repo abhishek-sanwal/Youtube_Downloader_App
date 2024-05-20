@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="YT_downloader_app" content="viewport width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <link rel ="icon" href="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Youtube-512.png" />
+    <script src="{% static 'app.js' %}"></script>
+    <noscript> This app requires Javascript to be enabled.</noscript>
+    <title>YT Downloader App</title>
+</head>
+
+<body>
+    <h1>Youtube Video Downloader App</h1>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label for "link">
+            Youtube Link:  
+        </label>
+        <input id="link" name="link" type="url" placeholder="Enter a youtube link to download" required>
+        <button class="paste">
+            <img src="https://cdn3.iconfinder.com/data/icons/business-912/24/copy-512.png" alt="Paste from clipboard" width="10px" height="10px" />
+        </button>
+        <sub class="message">Paste from clipboard</sub>
+        <p>
+            <button class="button" type="submit" >Download Video</button>
+        </p>
+
+    </form>
+
+    {% if length != 0 %}
+
+        <p style="color:rgba(240, 248, 255, 0.922)">
+
+            Your video {{ title }} with length {{ length}} having  {{ views }} views has been downloaded successfully.
+        </p>
+
+    {% endif %}
+
+    <footer>
+        This app is created using HTML, CSS, Javascript, Django by
+      <a style="color: aquamarine;"
+        href="https://www.linkedin.com/in/abhishek-sanwal"
+        >Abhishek Sanwal</a
+      >
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    color:rgba(255, 255, 255, 0.879);
+    margin: 10px;
+    padding: 16px;
+}
+/* / */
+h1{
+    background:linear-gradient(to right,red,green,yellow);
+    background-size: cover; 
+    background-clip: text;
+    background-position: center;
+    text-align: center;
+    color:transparent;
+    text-align: center;
+    filter: brightness(3);
+}
+
+.paste{
+    border-radius: 20px;
+}
+.message{
+    display: None;
+    transition: all 1s ease-in;
+}   
+/* 
+.paste:hover + .message{
+
+    display: inline;
+
+} */
+
+
+
+#link{
+    width: 70%;
+    text-align: center;
+    border-radius: 40px;
+}
+
+form{
+    display: block;
+    text-align: center;
+
+}
+#link:focus{
+
+    outline: greenyellow solid 2px;
+    width: 71%;
+}
+label{
+    font-weight: 500;
+    font-size: x-large;
+}
+.button{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 9px;
+    border-radius: 20px;
+    width: max-content;
+    height: max-content;
+    background: linear-gradient(to right ,rgb(217, 0, 255),rgb(255, 225, 0));
+    transition: all ease 1s;
+    background-size: cover;
+    background-clip: text;
+    text-align: center;
+    border: None;
+    color: transparent;
+}
+
+button:hover{
+    /* box-shadow: 2px 2px 0px white; */
+    scale: 1.2;
+}
+
+footer{
+
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 4mm;
+    width: 99%;
+}
