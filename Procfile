@@ -1,1 +1,1 @@
- web: gunicorn project.wsgi
+web: gunicorn yt_downloader.wsgi --log-file - 
